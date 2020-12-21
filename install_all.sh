@@ -4,7 +4,9 @@ LIB_DIR=./lib
 
 wget https://github.com/rpmsphere/noarch/blob/master/r/rpmsphere-release-32-1.noarch.rpm
 
-sudo dnf install sqlcipher 'https://raw.githubusercontent.com/rpmsphere/x86_64/master/l/libpthread-stubs-devel-0.2-5.1.x86_64.rpm' 'https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/32/Everything/x86_64/os/Packages/l/libuv-devel-1.34.2-1.fc32.x86_64.rpm'
+rpm -Uvh rpmsphere-release*rpm
+
+sudo dnf install sqlcipher libpthread-stubs-devel libuv-devel
 
 # Targeted Linux distribution is Fedora 33 Workstation
 # Tested on  Fedora 33 For x86_64. Kernel 5.8.15-301.fc33.x86_64
