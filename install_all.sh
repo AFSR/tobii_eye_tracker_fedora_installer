@@ -2,7 +2,7 @@
 
 LIB_DIR=./lib
 
-sudo dnf config-manager --add-repo https://github.com/rpmsphere/$basearch/raw/master/
+sudo dnf config-manager --add-repo https://github.com/rpmsphere/noarch/tree/master/r
 sudo dnf install sqlcipher libpthread-stubs-devel libuv-devel
 
 # Targeted Linux distribution is Fedora 33 Workstation
